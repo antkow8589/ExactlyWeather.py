@@ -23,7 +23,7 @@ async def dice(message: Message):
 async def start(message: Message, state: FSMContext):
     await message.answer(
         # text="Информационный бот, который покажет погоду в вашем городе.",
-        text="Узнайте информацию про любой город:",
+        text="Узнайте информацию про погоду:",
         reply_markup=main_keyboard()
     )
     await state.set_state(UserStates.user_choose_button)
